@@ -1,26 +1,129 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://example.com</id>
-    <title>Hexo</title>
+    <title>天空岛</title>
     <link href="http://example.com" />
-    <updated>2023-09-25T08:43:19.725Z</updated>
+    <updated>2023-09-27T07:27:35.000Z</updated>
+    <category term="test" />
+    <entry>
+        <id>http://example.com/2023/09/27/test/</id>
+        <title>test</title>
+        <link rel="alternate" href="http://example.com/2023/09/27/test/"/>
+        <content type="html"></content>
+        <updated>2023-09-27T07:27:35.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2023/09/26/hexo%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</id>
+        <title></title>
+        <link rel="alternate" href="http://example.com/2023/09/26/hexo%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+        <content type="html">&lt;h3 id=&#34;hexo配置文件&#34;&gt;hexo配置文件&lt;/h3&gt;
+&lt;p&gt;Hexo配置文件各设置注解&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;markdown识别错误&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;# Site
+title: Hexo  # 网站标题
+subtitle:    # 网站副标题
+description: # 网站描述
+author: John Doe  # 作者
+language:    # 语言
+timezone:    # 网站时区, Hexo默认使用您电脑的时区
+
+# URL
+## If your site is put in a subdirectory, set url as &#39;http://yoursite.com/child&#39;
+## and root as &#39;/child/&#39;
+url: http://yoursite.com   # 你的站点Url
+root: /                    # 站点的根目录
+permalink: :year/:month/:day/:title/   # 文章的 永久链接 格式   
+permalink_defaults:        # 永久链接中各部分的默认值
+
+# Directory   
+source_dir: source     # 资源文件夹，这个文件夹用来存放内容
+public_dir: public     # 公共文件夹，这个文件夹用于存放生成的站点文件。
+tag_dir: tags          # 标签文件夹     
+archive_dir: archives  # 归档文件夹
+category_dir: categories     # 分类文件夹
+code_dir: downloads/code     # Include code 文件夹
+i18n_dir: :lang              # 国际化（i18n）文件夹
+skip_render:                 # 跳过指定文件的渲染，您可使用 glob 表达式来匹配路径。    
+
+# Writing
+new_post_name: :title.md  # 新文章的文件名称
+default_layout: post      # 预设布局
+titlecase: false          # 把标题转换为 title case
+external_link: true       # 在新标签中打开链接
+filename_case: 0          # 把文件名称转换为 (1) 小写或 (2) 大写
+render_drafts: false      # 是否显示草稿
+post_asset_folder: false  # 是否启动 Asset 文件夹
+relative_link: false      # 把链接改为与根目录的相对位址    
+future: true              # 显示未来的文章
+highlight:                # 内容中代码块的设置    
+  enable: true            # 开启代码块高亮
+  line_number: true       # 显示行数
+  auto_detect: false      # 如果未指定语言，则启用自动检测
+  tab_replace:            # 用 n 个空格替换 tabs；如果值为空，则不会替换 tabs
+
+# Category &amp;amp; Tag
+default_category: uncategorized
+category_map:       # 分类别名
+tag_map:            # 标签别名
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD     # 日期格式
+time_format: HH:mm:ss       # 时间格式    
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10           # 分页数量
+pagination_dir: page   # 分页目录
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: landscape   # 主题名称
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+#  部署部分的设置
+deploy:     
+  type: &#39;&#39; # 类型，常用的git 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;style&gt;.axcepqnvvsfo{zoom:50%;}&lt;/style&gt;&lt;img src=&#34;/2023/09/26/hexo%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/image-20230926201229160.png&#34; class=&#34;axcepqnvvsfo&#34; alt=&#34;image-20230926201229160&#34;&gt;
+</content>
+        <updated>2023-09-26T12:24:16.265Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2023/09/26/Hello-World-0/</id>
+        <title>Hello World</title>
+        <link rel="alternate" href="http://example.com/2023/09/26/Hello-World-0/"/>
+        <content type="html">&lt;p&gt;这是一个测试文章&lt;/p&gt;
+</content>
+        <category term="test" />
+        <updated>2023-09-26T07:44:04.000Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/2023/09/25/hello-world/</id>
         <title>Hello World</title>
         <link rel="alternate" href="http://example.com/2023/09/25/hello-world/"/>
         <content type="html">&lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
-&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new &lt;span class=&#34;string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;Quick-Start&#34;&gt;Quick Start&lt;/h2&gt;
+&lt;h3 id=&#34;Create-a-new-post&#34;&gt;Create a new post&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hexo new &amp;quot;My New Post&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;Run-server&#34;&gt;Run server&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hexo server
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;Generate-static-files&#34;&gt;Generate static files&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hexo generate
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;Deploy-to-remote-sites&#34;&gt;Deploy to remote sites&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hexo deploy
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
 </content>
         <updated>2023-09-25T08:43:19.725Z</updated>

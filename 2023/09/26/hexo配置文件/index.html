@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>天空岛</title>
+        <title> | 天空岛</title>
         <meta name="author" content="John Doe" />
         <meta name="description" content="" />
         <meta name="keywords" content="" />
@@ -38,7 +38,9 @@
 
 
 
-<script src="/js/lib/home.js"></script>
+
+
+
 
 <link rel="stylesheet" href="/css/main.css" />
 
@@ -152,62 +154,11 @@
 </transition>
 
             <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-                <div id="home-head">
-    <div id="home-background" ref="homeBackground" data-images="/images/background.jpg"></div>
-    <div id="home-info" @click="homeClick">
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="info">
-            <div class="wrap">
-                <h1>天空岛</h1>
-                <h3></h3>
-                <h5></h5>
-            </div>
-        </span>
+                <div class="article">
+    <div>
+        <h1></h1>
     </div>
-</div>
-<div id="home-posts-wrap" true ref="homePostsWrap">
-    <div id="home-posts">
-        
-
-<div class="post">
-    <a href="/2023/09/27/test/">
-        <h2 class="post-title">test</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/9/27
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2023/09/27/test/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/09/26/hexo%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/">
-        <h2 class="post-title"></h2>
-    </a>
-    <div class="category-and-date">
-        
+    <div class="info">
         <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
@@ -217,148 +168,91 @@
         
         
     </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h3 id="hexo配置文件">hexo配置文件</h3>
+    
+    <div class="content" v-pre>
+        <h3 id="hexo配置文件">hexo配置文件</h3>
 <p>Hexo配置文件各设置注解</p>
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2023/09/26/hexo%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" class="go-post">阅读全文</a>
-</div>
+<span id="more"></span>
+<p>markdown识别错误</p>
+<pre><code class="language-json"># Site
+title: Hexo  # 网站标题
+subtitle:    # 网站副标题
+description: # 网站描述
+author: John Doe  # 作者
+language:    # 语言
+timezone:    # 网站时区, Hexo默认使用您电脑的时区
 
-<div class="post">
-    <a href="/2023/09/26/Hello-World-0/">
-        <h2 class="post-title">Hello World</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/9/26
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <p>这是一个测试文章</p>
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child'
+## and root as '/child/'
+url: http://yoursite.com   # 你的站点Url
+root: /                    # 站点的根目录
+permalink: :year/:month/:day/:title/   # 文章的 永久链接 格式   
+permalink_defaults:        # 永久链接中各部分的默认值
 
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/test/" style="color: #00a596">test</a>
-        </span>
-        
-    </div>
-    <a href="/2023/09/26/Hello-World-0/" class="go-post">阅读全文</a>
-</div>
+# Directory   
+source_dir: source     # 资源文件夹，这个文件夹用来存放内容
+public_dir: public     # 公共文件夹，这个文件夹用于存放生成的站点文件。
+tag_dir: tags          # 标签文件夹     
+archive_dir: archives  # 归档文件夹
+category_dir: categories     # 分类文件夹
+code_dir: downloads/code     # Include code 文件夹
+i18n_dir: :lang              # 国际化（i18n）文件夹
+skip_render:                 # 跳过指定文件的渲染，您可使用 glob 表达式来匹配路径。    
 
-<div class="post">
-    <a href="/2023/09/25/hello-world/">
-        <h2 class="post-title">Hello World</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/9/25
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start">Quick Start</h2>
-<h3 id="Create-a-new-post">Create a new post</h3>
-<pre><code class="language-bash">$ hexo new &quot;My New Post&quot;
+# Writing
+new_post_name: :title.md  # 新文章的文件名称
+default_layout: post      # 预设布局
+titlecase: false          # 把标题转换为 title case
+external_link: true       # 在新标签中打开链接
+filename_case: 0          # 把文件名称转换为 (1) 小写或 (2) 大写
+render_drafts: false      # 是否显示草稿
+post_asset_folder: false  # 是否启动 Asset 文件夹
+relative_link: false      # 把链接改为与根目录的相对位址    
+future: true              # 显示未来的文章
+highlight:                # 内容中代码块的设置    
+  enable: true            # 开启代码块高亮
+  line_number: true       # 显示行数
+  auto_detect: false      # 如果未指定语言，则启用自动检测
+  tab_replace:            # 用 n 个空格替换 tabs；如果值为空，则不会替换 tabs
+
+# Category &amp; Tag
+default_category: uncategorized
+category_map:       # 分类别名
+tag_map:            # 标签别名
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD     # 日期格式
+time_format: HH:mm:ss       # 时间格式    
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10           # 分页数量
+pagination_dir: page   # 分页目录
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: landscape   # 主题名称
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+#  部署部分的设置
+deploy:     
+  type: '' # 类型，常用的git 
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server">Run server</h3>
-<pre><code class="language-bash">$ hexo server
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files">Generate static files</h3>
-<pre><code class="language-bash">$ hexo generate
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
-<pre><code class="language-bash">$ hexo deploy
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2023/09/25/hello-world/" class="go-post">阅读全文</a>
-</div>
-
-
-        <div class="page-current">
-    
-    <span class="current">1</span>
-    
-    
-    
-    
-</div>
+<style>.axcepqnvvsfo{zoom:50%;}</style><img src="/2023/09/26/hexo%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/image-20230926201229160.png" class="axcepqnvvsfo" alt="image-20230926201229160">
 
     </div>
     
-    <div id="home-card">
-        <div id="card-style">
-    <div id="card-div">
-        <div class="avatar">
-            <img src="/images/avatar.jpg" alt="avatar" />
-        </div>
-        <div class="name">John Doe</div>
-        <div class="description">
-            <p>描述一下你自己<br>
-…</p>
-
-        </div>
-        
-        
-        <div class="friend-links">
-            
-            <div class="friend-link">
-                <a target="_blank" rel="noopener" href="https://argvchs.github.io">Argvchs</a>
-            </div>
-            
-        </div>
-        
-    </div>
-</div>
-
-    </div>
+    
+    
+    
+    
+    
     
 </div>
 
@@ -390,6 +284,12 @@
             
         </div>
         <script src="/js/main.js"></script>
+        
+        
+
+
+
+
         
     </body>
 </html>
