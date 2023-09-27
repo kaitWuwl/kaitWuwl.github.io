@@ -3,9 +3,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title> | MKの小窝</title>
+        <title>MySQL学习 | MKの小窝</title>
         <meta name="author" content="MK" />
-        <meta name="description" content="" />
+        <meta name="description" content="记录平凡生活" />
         <meta name="keywords" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <link rel="icon" href="/images/avatar.jpg" />
@@ -44,10 +44,8 @@
 
 <link rel="stylesheet" href="/css/main.css" />
 
-        # 流星背景
-        <canvas id="background" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index:-1">
-        </canvas>
-        <script src="/js/background.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/gh/lete114/CDN/Sum/sakura.js"></script>
     <meta name="generator" content="Hexo 6.3.0"></head>
     <body>
         <div id="layout">
@@ -156,7 +154,7 @@
             <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
                 <div class="article">
     <div>
-        <h1></h1>
+        <h1>MySQL学习</h1>
     </div>
     <div class="info">
         <span class="date">
@@ -166,6 +164,19 @@
             2023/9/27
         </span>
         
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/MySQL/" style="color: #00bcd4">MySQL</a>
+            </span>
+            
+        </span>
         
     </div>
     
@@ -436,7 +447,7 @@ select name 姓名,math 数学成绩,english 英语成绩 from stu;
 <li>
 <p>条件</p>
 <p>条件列表可以使用以下运算符</p>
-<img src="/2023/09/27/MySQL/image-20220921174012126.png" class="" title="image-20220921174012126">
+
 </li>
 </ul>
 <h4 id="upper函数"><a class="markdownIt-Anchor" href="#upper函数">#</a> UPPER 函数</h4>
@@ -590,5 +601,12 @@ WHERE 课程号 = 'M01F011'
 
 
         
+
+        <canvas
+        id="background"
+        style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: -1"
+        ></canvas>
+        <script src="/js/background.min.js"></script>
+
     </body>
 </html>
