@@ -9,84 +9,68 @@
         <id>http://example.com/2023/09/27/MySQL%E5%AD%A6%E4%B9%A0/</id>
         <title>MySQL学习</title>
         <link rel="alternate" href="http://example.com/2023/09/27/MySQL%E5%AD%A6%E4%B9%A0/"/>
-        <content type="html">&lt;h2 id=&#34;MySQL&#34;&gt;MySQL&lt;/h2&gt;
-&lt;h3 id=&#34;SQL简介&#34;&gt;SQL简介&lt;/h3&gt;
-&lt;ul class=&#34;lvl-0&#34;&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
-&lt;p&gt;英文：Structured Query Language，简称 SQL&lt;/p&gt;
-&lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
-&lt;p&gt;结构化查询语言，一门操作关系型数据库的编程语言&lt;/p&gt;
-&lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
-&lt;p&gt;定义操作所有关系型数据库的统一标准&lt;/p&gt;
-&lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
-&lt;p&gt;对于同一个需求，每一种数据库操作的方式可能会存在一些不一样的地方，我们称为“方言”&lt;/p&gt;
-&lt;/li&gt;
+        <content type="html">&lt;h2 id=&#34;mysql&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#mysql&#34;&gt;#&lt;/a&gt; MySQL&lt;/h2&gt;
+&lt;h3 id=&#34;sql简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#sql简介&#34;&gt;#&lt;/a&gt; SQL 简介&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;英文：Structured Query Language，简称 SQL&lt;/li&gt;
+&lt;li&gt;结构化查询语言，一门操作关系型数据库的编程语言&lt;/li&gt;
+&lt;li&gt;定义操作所有关系型数据库的统一标准&lt;/li&gt;
+&lt;li&gt;对于同一个需求，每一种数据库操作的方式可能会存在一些不一样的地方，我们称为 “方言”&lt;/li&gt;
 &lt;/ul&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;h4 id=&#34;通用语法&#34;&gt;通用语法&lt;/h4&gt;
-&lt;ul class=&#34;lvl-0&#34;&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;h4 id=&#34;通用语法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#通用语法&#34;&gt;#&lt;/a&gt; 通用语法&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
 &lt;p&gt;SQL 语句可以单行或多行书写，以分号结尾。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;li&gt;
 &lt;p&gt;MySQL 数据库的 SQL 语句不区分大小写，关键字建议使用大写。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;li&gt;
 &lt;p&gt;注释&lt;/p&gt;
-&lt;p&gt;单行注释: – 注释内容 或 #注释内容(MySQL 特有)&lt;/p&gt;
+&lt;p&gt;单行注释: – 注释内容 或 #注释内容 (MySQL 特有)&lt;/p&gt;
 &lt;p&gt;多行注释：/* 注释内容 */&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;SQL语法分类&#34;&gt;SQL语法分类&lt;/h4&gt;
-&lt;ul class=&#34;lvl-0&#34;&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
-&lt;p&gt;DDL(Data Definition Language) ： 数据定义语言，用来定义数据库对象：数据库，表，列等。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
-&lt;p&gt;DML(Data Manipulation Language) 数据操作语言，用来对数据库中表的数据进行增删改&lt;/p&gt;
-&lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
-&lt;p&gt;DQL(Data Query Language) 数据查询语言，用来查询数据库中表的记录(数据)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
-&lt;p&gt;DCL(Data Control Language) 数据控制语言，用来定义数据库的访问权限和安全级别，及创建用户&lt;/p&gt;
-&lt;/li&gt;
+&lt;h4 id=&#34;sql语法分类&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#sql语法分类&#34;&gt;#&lt;/a&gt; SQL 语法分类&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;DDL (Data Definition Language) ： 数据定义语言，用来定义数据库对象：数据库，表，列等。&lt;/li&gt;
+&lt;li&gt;DML (Data Manipulation Language) 数据操作语言，用来对数据库中表的数据进行增删改&lt;/li&gt;
+&lt;li&gt;DQL (Data Query Language) 数据查询语言，用来查询数据库中表的记录 (数据)&lt;/li&gt;
+&lt;li&gt;DCL (Data Control Language) 数据控制语言，用来定义数据库的访问权限和安全级别，及创建用户&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;DDL学习&#34;&gt;DDL学习&lt;/h3&gt;
-&lt;h4 id=&#34;DDL操作数据库&#34;&gt;DDL操作数据库&lt;/h4&gt;
-&lt;ul class=&#34;lvl-0&#34;&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
-&lt;p&gt;查询所有数据库(SQL语言不区分大小写):&lt;/p&gt;
+&lt;h3 id=&#34;ddl学习&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ddl学习&#34;&gt;#&lt;/a&gt; DDL 学习&lt;/h3&gt;
+&lt;h4 id=&#34;ddl操作数据库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ddl操作数据库&#34;&gt;#&lt;/a&gt; DDL 操作数据库&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;查询所有数据库 (SQL 语言不区分大小写):&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;show databases;&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;li&gt;
 &lt;p&gt;创建数据库:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;create database 数据库名称;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;创建数据库时，如果该名称的数据库已存在则会报错，所以创建数据库时先判断再创建。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;create database if not exists 数据库名称;&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;li&gt;
 &lt;p&gt;删除数据库：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;drop database 数据库名称;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;删除数据库（如果存在则删除）：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;drop database if exists 数据库名称;&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;li&gt;
 &lt;p&gt;使用数据库：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;use 数据库名称;&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;li&gt;
 &lt;p&gt;查看当前使用的数据库：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;select database();&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;数据类型&#34;&gt;数据类型&lt;/h4&gt;
+&lt;h4 id=&#34;数据类型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据类型&#34;&gt;#&lt;/a&gt; 数据类型&lt;/h4&gt;
 &lt;p&gt;MySQL 支持多种类型，可以分为三类：&lt;/p&gt;
-&lt;ul class=&#34;lvl-0&#34;&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
 &lt;p&gt;数值&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;tinyint : 小整数型，占一个字节
 int : 大整数类型，占四个字节
@@ -96,14 +80,14 @@ double : 浮点类型
 	eg ： score double(5,2)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;li&gt;
 &lt;p&gt;日期&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;date ： 日期值，只包含年月日
 	eg ：birthday date
 datetime ： 混合日期和时间值，包含年月日时分秒
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;li&gt;
 &lt;p&gt;字符串&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-MySQL&#34;&gt;char ： 定长字符串
 	优点：存储性能高 缺点：浪费空间
@@ -114,22 +98,22 @@ varchar ： 变长字符串
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;DDL操作表&#34;&gt;DDL操作表&lt;/h4&gt;
+&lt;h4 id=&#34;ddl操作表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ddl操作表&#34;&gt;#&lt;/a&gt; DDL 操作表&lt;/h4&gt;
 &lt;p&gt;操作表也就是对表进行增（Create）删（Retrieve）改（Update）查（Delete）。&lt;/p&gt;
-&lt;h5 id=&#34;查询表&#34;&gt;查询表&lt;/h5&gt;
-&lt;ul class=&#34;lvl-0&#34;&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;h5 id=&#34;查询表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查询表&#34;&gt;#&lt;/a&gt; 查询表&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;
 &lt;p&gt;查询当前数据库所有表名称：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;show tables;&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;li&gt;
 &lt;p&gt;查询表结构：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;desc 表名称;&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5 id=&#34;创建表&#34;&gt;创建表&lt;/h5&gt;
-&lt;ul class=&#34;lvl-0&#34;&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;h5 id=&#34;创建表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#创建表&#34;&gt;#&lt;/a&gt; 创建表&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;
 &lt;p&gt;创建表：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;create datebase 表名 (
 字段1 数据类型1，
@@ -146,9 +130,9 @@ create datebase user (
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5 id=&#34;删除表&#34;&gt;删除表&lt;/h5&gt;
-&lt;ul class=&#34;lvl-0&#34;&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;h5 id=&#34;删除表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#删除表&#34;&gt;#&lt;/a&gt; 删除表&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;
 &lt;p&gt;删除表：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;drop table 表名;
 删除表时判断表是否存在：
@@ -156,30 +140,30 @@ drop table if exists 表名;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5 id=&#34;修改表&#34;&gt;修改表&lt;/h5&gt;
-&lt;ul class=&#34;lvl-0&#34;&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;h5 id=&#34;修改表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#修改表&#34;&gt;#&lt;/a&gt; 修改表&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;
 &lt;p&gt;修改表：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;alter table 表名 add 列名 数据类型;
 例：给stu表添加一列address，该字段类型时varchar(50)
 alter table stu add address varchar(50);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;li&gt;
 &lt;p&gt;修改数据类型：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;alter table 表名 modify 列名 新数据类型;
 例：将stu表的address字段的数据类型修改为char(50)
 alter table stu modify address char(50);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;li&gt;
 &lt;p&gt;修改列名和数据类型：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;alter table 表名 change 列名 新列名 新数据类型;
 例：将stu表的address字段名改为addr，数据类型修改为varchar(50)
 alter table stu change address addr varchar(50);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;li&gt;
 &lt;p&gt;删除列：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;alter table 表名 drop 列名;
 例：将stu表中的addr列删除
@@ -187,30 +171,30 @@ alter table stu drop addr;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;DML&#34;&gt;DML&lt;/h3&gt;
-&lt;p&gt;DML主要是对数据进行增（insert）删（delete）改（update）操作。&lt;/p&gt;
-&lt;h4 id=&#34;添加数据&#34;&gt;添加数据&lt;/h4&gt;
-&lt;ul class=&#34;lvl-0&#34;&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;h3 id=&#34;dml&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#dml&#34;&gt;#&lt;/a&gt; DML&lt;/h3&gt;
+&lt;p&gt;DML 主要是对数据进行增（insert）删（delete）改（update）操作。&lt;/p&gt;
+&lt;h4 id=&#34;添加数据&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#添加数据&#34;&gt;#&lt;/a&gt; 添加数据&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
 &lt;p&gt;给指定列添加数据：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;insert into 表名(列名1，列名2，...)values(值1，值2，...);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;li&gt;
 &lt;p&gt;给全部列添加数据：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;insert into 表名 values(值1，值2，值3...);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;li&gt;
 &lt;p&gt;批量添加数据：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;insert into 表名(列名1，列名2，列名3...) values(值1，值2，值3...),(值1，值2，值3...),(值1，值2，值3...)...;
 insert into 表名 values(值1，值2，值3...),(值1，值2，值3...),(值1，值2，值3...)...;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;修改数据&#34;&gt;修改数据&lt;/h4&gt;
-&lt;ul class=&#34;lvl-0&#34;&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;h4 id=&#34;修改数据&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#修改数据&#34;&gt;#&lt;/a&gt; 修改数据&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
 &lt;p&gt;修改表数据：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;update 表名 set 列名1=值1，列名2=值2，...[where 条件];
 注意：
@@ -224,9 +208,9 @@ update stu set birthday=&#39;1999-12-12&#39;,score=99.99 where name=&#39;张三&
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;删除数据&#34;&gt;删除数据&lt;/h4&gt;
-&lt;ul class=&#34;lvl-0&#34;&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;h4 id=&#34;删除数据&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#删除数据&#34;&gt;#&lt;/a&gt; 删除数据&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
 &lt;p&gt;删除数据：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;delete from 表名 [where 条件];
 同上，不加条件会把整张表的数据删除。
@@ -238,7 +222,7 @@ delete from stu;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;DQL&#34;&gt;DQL&lt;/h3&gt;
+&lt;h3 id=&#34;dql&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#dql&#34;&gt;#&lt;/a&gt; DQL&lt;/h3&gt;
 &lt;p&gt;完整语法：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;select 字段列表
 from 表名列表
@@ -248,9 +232,9 @@ having 分组后条件
 order by 排序字段
 limit 分页限定
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;基础查询&#34;&gt;基础查询&lt;/h4&gt;
-&lt;ul class=&#34;lvl-0&#34;&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;h4 id=&#34;基础查询&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基础查询&#34;&gt;#&lt;/a&gt; 基础查询&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
 &lt;p&gt;查询多个字段&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;select 字段列表 from 表名;
 查询所有数据
@@ -262,7 +246,7 @@ select name,age from stu;
 select address from stu;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;li&gt;
 &lt;p&gt;去除重复记录&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;select distinct from 表名;
 例：
@@ -270,7 +254,7 @@ select address from stu;
 select distinct address from stu;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;li&gt;
 &lt;p&gt;起别名&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;as:
 as也可以省略
@@ -282,67 +266,65 @@ select name 姓名,math 数学成绩,english 英语成绩 from stu;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;条件查询&#34;&gt;条件查询&lt;/h4&gt;
-&lt;ul class=&#34;lvl-0&#34;&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;h4 id=&#34;条件查询&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#条件查询&#34;&gt;#&lt;/a&gt; 条件查询&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
 &lt;p&gt;&lt;strong&gt;语法&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;select 字段列表 from 表名 where 条件列表&lt;/code&gt;;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;select 字段列表 from 表名 where 条件列表&lt;/code&gt; ；&lt;/p&gt;
 &lt;/li&gt;
-&lt;li class=&#34;lvl-2&#34;&gt;
+&lt;li&gt;
 &lt;p&gt;条件&lt;/p&gt;
 &lt;p&gt;条件列表可以使用以下运算符&lt;/p&gt;
 
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;UPPER函数&#34;&gt;UPPER函数&lt;/h4&gt;
+&lt;h4 id=&#34;upper函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#upper函数&#34;&gt;#&lt;/a&gt; UPPER 函数&lt;/h4&gt;
 &lt;p&gt;SQL UPPER 函数 以大写形式显示结构化查询语言中的所有字符串字符。它将小字符或一组小字符转换为大写字母。&lt;/p&gt;
 &lt;p&gt;我们还可以对 SQL 表的字符串字段使用 UPPER 函数。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;语法1&lt;/strong&gt;：此语法将 UPPER 函数与 SQL 表的列名一起使用：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;SELECT UPPER(Column_Name) AS Alias_Name FROM Table_Name;  
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;在语法中，我们必须指定要在其上使用 UPPER 字符串函数的列名。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;语法2&lt;/strong&gt;：此语法使用 UPPER 函数和一组小写字符（字符串）：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;SELECT UPPER(String);  
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;语法3&lt;/strong&gt;：此语法使用带有单个小写字符的 UPPER 函数：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;SELECT UPPER(lower_case_character);  
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;SQL执行流程&#34;&gt;SQL执行流程&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;语法 1&lt;/strong&gt;：此语法将 UPPER 函数与 SQL 表的列名一起使用：&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt; UPPER&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Column_Name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;AS&lt;/span&gt; Alias_Name &lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; Table_Name&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;在语法中，我们必须指定要在其上使用 UPPER 字符串函数的列名。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;语法 2&lt;/strong&gt;：此语法使用 UPPER 函数和一组小写字符（字符串）：&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt; UPPER&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;String&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;语法 3&lt;/strong&gt;：此语法使用带有单个小写字符的 UPPER 函数：&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt; UPPER&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;lower_case_character&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;sql执行流程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#sql执行流程&#34;&gt;#&lt;/a&gt; SQL 执行流程&lt;/h4&gt;
 &lt;blockquote&gt;
-&lt;p&gt;注意sql语句的执行顺序： (1) FROM: 对FROM子句中的左表&lt;code&gt;&amp;lt;left_table&amp;gt;&lt;/code&gt;和右表&lt;code&gt;&amp;lt;right_table&amp;gt;&lt;/code&gt;执行笛卡儿积，产生虚拟表VT1;&lt;/p&gt;
+&lt;p&gt;注意 sql 语句的执行顺序： (1) FROM: 对 FROM 子句中的左表 &lt;code&gt;&amp;lt;left_table&amp;gt;&lt;/code&gt;  和右表 &lt;code&gt;&amp;lt;right_table&amp;gt;&lt;/code&gt;  执行笛卡儿积，产生虚拟表 VT1;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;(2) ON: 对虚拟表VT1进行ON筛选，只有那些符合&lt;code&gt;&amp;lt;join_condition&amp;gt;&lt;/code&gt;的行才被插入，产生虚拟表VT2;&lt;/p&gt;
+&lt;p&gt;(2) ON: 对虚拟表 VT1 进行 ON 筛选，只有那些符合 &lt;code&gt;&amp;lt;join_condition&amp;gt;&lt;/code&gt;  的行才被插入，产生虚拟表 VT2;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;(3) JOIN: 如果指定了&lt;code&gt;OUTER JOIN&lt;/code&gt;(如LEFT OUTER JOIN、RIGHT OUTER JOIN)，那么保留表中未匹配的行作为外部行添加到虚拟表VT2，产生虚拟表VT3。如果FROM子句包含两个以上的表，则对上一个连接生成的结果表VT3和下一个表重复执行步骤1~步骤3，直到处理完所有的表;&lt;/p&gt;
+&lt;p&gt;(3) JOIN: 如果指定了 &lt;code&gt;OUTER JOIN&lt;/code&gt;  (如 LEFT OUTER JOIN、RIGHT OUTER JOIN)，那么保留表中未匹配的行作为外部行添加到虚拟表 VT2，产生虚拟表 VT3。如果 FROM 子句包含两个以上的表，则对上一个连接生成的结果表 VT3 和下一个表重复执行步骤 1~ 步骤 3，直到处理完所有的表；&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;(4) WHERE: 对虚拟表VT3应用WHERE过滤条件，只有符合&lt;code&gt;&amp;lt;where_condition&amp;gt;&lt;/code&gt;的记录才会被插入到VT4;&lt;/p&gt;
+&lt;p&gt;(4) WHERE: 对虚拟表 VT3 应用 WHERE 过滤条件，只有符合 &lt;code&gt;&amp;lt;where_condition&amp;gt;&lt;/code&gt;  的记录才会被插入到 VT4;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;(5) GROUP By: 根据GROUP BY子句中的列，对VT4中的记录进行分组操作，产生VT5;&lt;/p&gt;
+&lt;p&gt;(5) GROUP By: 根据 GROUP BY 子句中的列，对 VT4 中的记录进行分组操作，产生 VT5;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;(6) CUBE|ROllUP: 对VT5进行CUBE或ROLLUP操作，产生VT6;&lt;/p&gt;
+&lt;p&gt;(6) CUBE|ROllUP: 对 VT5 进行 CUBE 或 ROLLUP 操作，产生 VT6;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;(7) HAVING: 对虚拟表VT6应用HAVING过滤器，只有符合&lt;code&gt;&amp;lt;having_condition&amp;gt;&lt;/code&gt;的记录才会被插入到VT7;&lt;/p&gt;
+&lt;p&gt;(7) HAVING: 对虚拟表 VT6 应用 HAVING 过滤器，只有符合 &lt;code&gt;&amp;lt;having_condition&amp;gt;&lt;/code&gt;  的记录才会被插入到 VT7;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;(8) SELECT: 第二次执行SELECT操作，选择指定的列，插入到虚拟表VT8中;&lt;/p&gt;
+&lt;p&gt;(8) SELECT: 第二次执行 SELECT 操作，选择指定的列，插入到虚拟表 VT8 中；&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;(9) DISTINCT: 去除重复，得到虚拟表VT9;&lt;/p&gt;
+&lt;p&gt;(9) DISTINCT: 去除重复，得到虚拟表 VT9;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;(10) ORDER BY: 将虚拟表VT9中的记录按照&lt;code&gt;&amp;lt;order_by_list&amp;gt;&lt;/code&gt;进行排序操作，得到虚拟表VT10;&lt;/p&gt;
+&lt;p&gt;(10) ORDER BY: 将虚拟表 VT9 中的记录按照 &lt;code&gt;&amp;lt;order_by_list&amp;gt;&lt;/code&gt;  进行排序操作，得到虚拟表 VT10;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;(11) LIMIT: 取出指定行的记录，产生虚拟表VT11，并返回给查询用户&lt;/p&gt;
+&lt;p&gt;(11) LIMIT: 取出指定行的记录，产生虚拟表 VT11，并返回给查询用户&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;CASE函数&#34;&gt;CASE函数&lt;/h3&gt;
-&lt;p&gt;是一种多分支的函数，可以根据条件列表的值返回多个可能的结果表达式中的一个。可用在任何允许使用表达式的地方，但不能单独作为一个语句执行。分为：简单CASE函数搜索CASE函数&lt;/p&gt;
+&lt;h3 id=&#34;case函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#case函数&#34;&gt;#&lt;/a&gt; CASE 函数&lt;/h3&gt;
+&lt;p&gt;是一种多分支的函数，可以根据条件列表的值返回多个可能的结果表达式中的一个。&lt;br&gt;
+可用在任何允许使用表达式的地方，但不能单独作为一个语句执行。&lt;br&gt;
+分为：&lt;br&gt;
+简单 CASE 函数&lt;br&gt;
+搜索 CASE 函数&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;CASE 测试表达式
 WHEN 简单表达式1 THEN 结果表达式1
 WHEN 简单表达式2 THEN 结果表达式2 …
@@ -350,8 +332,15 @@ WHEN 简单表达式n THEN 结果表达式n
 [ ELSE 结果表达式n+1 ]
 END
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;计算测试表达式，按从上到下的书写顺序将测试表达式的值与每个WHEN子句的简单表达式进行比较。如果某个简单表达式的值与测试表达式的值相等，则返回第一个与之匹配的WHEN子句所对应的结果表达式的值。如果所有简单表达式的值与测试表达式的值都不相等，若指定了ELSE子句,则返回ELSE子句中指定的结果表达式的值；若没有指定ELSE子句，则返回NULL。&lt;/p&gt;
-&lt;p&gt;例48. 查询班级表中的学生的班号、班名、系号和班主任号，并对系号作如下处理：当系号为1时，显示 “计算机系”；当系号为2时，显示 “软件工程系”；当系号为3时，显示 “物联网系”。&lt;/p&gt;
+&lt;p&gt;计算测试表达式，按从上到下的书写顺序将测试表达式的值与每个 WHEN 子句的简单表达式进行比较。&lt;br&gt;
+如果某个简单表达式的值与测试表达式的值相等，则返回第一个与之匹配的 WHEN 子句所对应的结果表达式的值。&lt;br&gt;
+如果所有简单表达式的值与测试表达式的值都不相等，&lt;br&gt;
+若指定了 ELSE 子句，则返回 ELSE 子句中指定的结果表达式的值；&lt;br&gt;
+若没有指定 ELSE 子句，则返回 NULL。&lt;/p&gt;
+&lt;p&gt;例 48. 查询班级表中的学生的班号、班名、系号和班主任号，并对系号作如下处理：&lt;br&gt;
+当系号为 1 时，显示 “计算机系”；&lt;br&gt;
+当系号为 2 时，显示 “软件工程系”；&lt;br&gt;
+当系号为 3 时，显示 “物联网系”。&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-MySQL&#34;&gt;SELECT 班号 ,班名,
 CASE 系号
 WHEN 1 THEN &#39;软件工程系&#39;
@@ -360,7 +349,7 @@ WHEN 3 THEN &#39;物联网系&#39;
 END AS 系号,班主任号
 FROM 班级表
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;搜索CASE函数&lt;/p&gt;
+&lt;p&gt;搜索 CASE 函数&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-MySQL&#34;&gt;CASE
 WHEN 布尔表达式1 THEN 结果表达式1
 WHEN 布尔表达式2 THEN 结果表达式2 …
@@ -368,8 +357,12 @@ WHEN 布尔表达式n THEN 结果表达式n
 [ ELSE 结果表达式n+1 ]
 END
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;按从上到下的书写顺序计算每个WHEN子句的布尔表达式。返回第一个取值为TRUE的布尔表达式所对应的结果表达式的值。如果没有取值为TRUE的布尔表达式，则当指定了ELSE子句时,返回ELSE子句中指定的结果；如果没有指定ELSE子句，则返回NULL。&lt;/p&gt;
-&lt;p&gt;例48用搜索CASE来做：&lt;/p&gt;
+&lt;p&gt;按从上到下的书写顺序计算每个 WHEN 子句的布尔表达式。&lt;br&gt;
+返回第一个取值为 TRUE 的布尔表达式所对应的结果表达式的值。&lt;br&gt;
+如果没有取值为 TRUE 的布尔表达式，&lt;br&gt;
+则当指定了 ELSE 子句时，返回 ELSE 子句中指定的结果；&lt;br&gt;
+如果没有指定 ELSE 子句，则返回 NULL。&lt;/p&gt;
+&lt;p&gt;例 48 用搜索 CASE 来做：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-MySQL&#34;&gt;SELECT 班号 ,班名,
 CASE
 WHEN 系号=1 THEN &#39;软件工程系&#39;
@@ -378,7 +371,7 @@ WHEN 系号=3 THEN &#39;物联网系&#39;
 END AS 系号,班主任号
 FROM 班级表
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;例49.查询“M01F011”号课程的考试情况，列出学号、课程号和成绩，同时将百分制成绩显示为等级。&lt;/p&gt;
+&lt;p&gt;例 49. 查询 “M01F011” 号课程的考试情况，列出学号、课程号和成绩，同时将百分制成绩显示为等级。&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-MySQL&#34;&gt;SELECT 学号,课程号,
 CASE
 WHEN 成绩 &amp;gt;= 90 THEN &#39;优&#39;
@@ -398,80 +391,10 @@ WHERE 课程号 = &#39;M01F011&#39;
         <id>http://example.com/2023/09/26/hexo%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</id>
         <title></title>
         <link rel="alternate" href="http://example.com/2023/09/26/hexo%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
-        <content type="html">&lt;h3 id=&#34;hexo配置文件&#34;&gt;hexo配置文件&lt;/h3&gt;
-&lt;p&gt;Hexo配置文件各设置注解&lt;/p&gt;
+        <content type="html">&lt;h3 id=&#34;hexo配置文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo配置文件&#34;&gt;#&lt;/a&gt; hexo 配置文件&lt;/h3&gt;
+&lt;p&gt;Hexo 配置文件各设置注解&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;# Site
-title: Hexo  # 网站标题
-subtitle:    # 网站副标题
-description: # 网站描述
-author: John Doe  # 作者
-language:    # 语言
-timezone:    # 网站时区, Hexo默认使用您电脑的时区
-
-# URL
-## If your site is put in a subdirectory, set url as &#39;http://yoursite.com/child&#39;
-## and root as &#39;/child/&#39;
-url: http://yoursite.com   # 你的站点Url
-root: /                    # 站点的根目录
-permalink: :year/:month/:day/:title/   # 文章的 永久链接 格式   
-permalink_defaults:        # 永久链接中各部分的默认值
-
-# Directory   
-source_dir: source     # 资源文件夹，这个文件夹用来存放内容
-public_dir: public     # 公共文件夹，这个文件夹用于存放生成的站点文件。
-tag_dir: tags          # 标签文件夹     
-archive_dir: archives  # 归档文件夹
-category_dir: categories     # 分类文件夹
-code_dir: downloads/code     # Include code 文件夹
-i18n_dir: :lang              # 国际化（i18n）文件夹
-skip_render:                 # 跳过指定文件的渲染，您可使用 glob 表达式来匹配路径。    
-
-# Writing
-new_post_name: :title.md  # 新文章的文件名称
-default_layout: post      # 预设布局
-titlecase: false          # 把标题转换为 title case
-external_link: true       # 在新标签中打开链接
-filename_case: 0          # 把文件名称转换为 (1) 小写或 (2) 大写
-render_drafts: false      # 是否显示草稿
-post_asset_folder: false  # 是否启动 Asset 文件夹
-relative_link: false      # 把链接改为与根目录的相对位址    
-future: true              # 显示未来的文章
-highlight:                # 内容中代码块的设置    
-  enable: true            # 开启代码块高亮
-  line_number: true       # 显示行数
-  auto_detect: false      # 如果未指定语言，则启用自动检测
-  tab_replace:            # 用 n 个空格替换 tabs；如果值为空，则不会替换 tabs
-
-# Category &amp;amp; Tag
-default_category: uncategorized
-category_map:       # 分类别名
-tag_map:            # 标签别名
-
-# Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD     # 日期格式
-time_format: HH:mm:ss       # 时间格式    
-
-# Pagination
-## Set per_page to 0 to disable pagination
-per_page: 10           # 分页数量
-pagination_dir: page   # 分页目录
-
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: landscape   # 主题名称
-
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-#  部署部分的设置
-deploy:     
-  type: &#39;&#39; # 类型，常用的git 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;style&gt;.chnswpwkmipb{zoom:50%;}&lt;/style&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# Site&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; Hexo  &lt;span class=&#34;token comment&#34;&gt;# 网站标题&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;subtitle&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;    &lt;span class=&#34;token comment&#34;&gt;# 网站副标题&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 网站描述&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;author&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; John Doe  &lt;span class=&#34;token comment&#34;&gt;# 作者&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;language&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;    &lt;span class=&#34;token comment&#34;&gt;# 语言&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;timezone&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;    &lt;span class=&#34;token comment&#34;&gt;# 网站时区，Hexo 默认使用您电脑的时区&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# URL&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;## If your site is put in a subdirectory, set url as &#39;http://yoursite.com/child&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;## and root as &#39;/child/&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; http&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;//yoursite.com   &lt;span class=&#34;token comment&#34;&gt;# 你的站点 Url&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;root&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; /                    &lt;span class=&#34;token comment&#34;&gt;# 站点的根目录&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;permalink&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;year/&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;month/&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;day/&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;title/   &lt;span class=&#34;token comment&#34;&gt;# 文章的 永久链接 格式   &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;permalink_defaults&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;        &lt;span class=&#34;token comment&#34;&gt;# 永久链接中各部分的默认值&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# Directory   &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;source_dir&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; source     &lt;span class=&#34;token comment&#34;&gt;# 资源文件夹，这个文件夹用来存放内容&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;public_dir&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; public     &lt;span class=&#34;token comment&#34;&gt;# 公共文件夹，这个文件夹用于存放生成的站点文件。&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;tag_dir&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; tags          &lt;span class=&#34;token comment&#34;&gt;# 标签文件夹     &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;archive_dir&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; archives  &lt;span class=&#34;token comment&#34;&gt;# 归档文件夹&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;category_dir&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; categories     &lt;span class=&#34;token comment&#34;&gt;# 分类文件夹&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;code_dir&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; downloads/code     &lt;span class=&#34;token comment&#34;&gt;# Include code 文件夹&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;i18n_dir&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;lang              &lt;span class=&#34;token comment&#34;&gt;# 国际化（i18n）文件夹&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;skip_render&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;                 &lt;span class=&#34;token comment&#34;&gt;# 跳过指定文件的渲染，您可使用 glob 表达式来匹配路径。    &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# Writing&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;new_post_name&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;title.md  &lt;span class=&#34;token comment&#34;&gt;# 新文章的文件名称&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;default_layout&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; post      &lt;span class=&#34;token comment&#34;&gt;# 预设布局&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;titlecase&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;false&lt;/span&gt;          &lt;span class=&#34;token comment&#34;&gt;# 把标题转换为 title case&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;external_link&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;       &lt;span class=&#34;token comment&#34;&gt;# 在新标签中打开链接&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;filename_case&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;          &lt;span class=&#34;token comment&#34;&gt;# 把文件名称转换为 (1) 小写或 (2) 大写&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;33&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;render_drafts&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;false&lt;/span&gt;      &lt;span class=&#34;token comment&#34;&gt;# 是否显示草稿&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;34&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;post_asset_folder&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;false&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 是否启动 Asset 文件夹&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;35&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;relative_link&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;false&lt;/span&gt;      &lt;span class=&#34;token comment&#34;&gt;# 把链接改为与根目录的相对位址    &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;36&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;future&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;              &lt;span class=&#34;token comment&#34;&gt;# 显示未来的文章&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;37&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;highlight&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;                &lt;span class=&#34;token comment&#34;&gt;# 内容中代码块的设置    &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;38&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;enable&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;            &lt;span class=&#34;token comment&#34;&gt;# 开启代码块高亮&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;39&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;line_number&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;       &lt;span class=&#34;token comment&#34;&gt;# 显示行数&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;40&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;auto_detect&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;false&lt;/span&gt;      &lt;span class=&#34;token comment&#34;&gt;# 如果未指定语言，则启用自动检测&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;41&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;tab_replace&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;            &lt;span class=&#34;token comment&#34;&gt;# 用 n 个空格替换 tabs；如果值为空，则不会替换 tabs&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;42&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;43&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# Category &amp;amp; Tag&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;44&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;default_category&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; uncategorized&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;45&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;category_map&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;       &lt;span class=&#34;token comment&#34;&gt;# 分类别名&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;46&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;tag_map&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;            &lt;span class=&#34;token comment&#34;&gt;# 标签别名&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;47&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;48&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# Date / Time format&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;49&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;## Hexo uses Moment.js to parse and display date&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;50&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;## You can customize the date format as defined in&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;51&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;## http://momentjs.com/docs/#/displaying/format/&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;52&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;date_format&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; YYYY&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;MM&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;DD     &lt;span class=&#34;token comment&#34;&gt;# 日期格式&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;53&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;time_format&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; HH&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;mm&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;ss       &lt;span class=&#34;token comment&#34;&gt;# 时间格式    &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;54&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;55&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# Pagination&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;56&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;## Set per_page to 0 to disable pagination&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;57&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;per_page&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;           &lt;span class=&#34;token comment&#34;&gt;# 分页数量&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;58&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;pagination_dir&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; page   &lt;span class=&#34;token comment&#34;&gt;# 分页目录&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;59&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;60&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# Extensions&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;61&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;## Plugins: https://hexo.io/plugins/&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;62&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;## Themes: https://hexo.io/themes/&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;63&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;theme&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; landscape   &lt;span class=&#34;token comment&#34;&gt;# 主题名称&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;64&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;65&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# Deployment&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;66&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;## Docs: https://hexo.io/docs/deployment.html&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;67&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#  部署部分的设置&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;68&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;deploy&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;     &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;69&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;&#39;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 类型，常用的 git&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;style&gt;.okyffydhdhxm{zoom:50%;}&lt;/style&gt;
 </content>
         <updated>2023-09-26T12:24:16.265Z</updated>
     </entry>
@@ -480,23 +403,15 @@ deploy:
         <title>Hello World</title>
         <link rel="alternate" href="http://example.com/2023/09/25/hello-world/"/>
         <content type="html">&lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;Quick-Start&#34;&gt;Quick Start&lt;/h2&gt;
-&lt;h3 id=&#34;Create-a-new-post&#34;&gt;Create a new post&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hexo new &amp;quot;My New Post&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;Run-server&#34;&gt;Run server&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hexo server
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;Generate-static-files&#34;&gt;Generate static files&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hexo generate
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;Deploy-to-remote-sites&#34;&gt;Deploy to remote sites&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hexo deploy
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
+&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo new &lt;span class=&#34;token string&#34;&gt;&#34;My New Post&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo server&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo generate&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
 </content>
         <updated>2023-09-25T08:43:19.725Z</updated>
     </entry>
