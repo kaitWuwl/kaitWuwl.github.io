@@ -12,7 +12,7 @@
 	transition: margin-left 1s;
 	width: 60px;
 	writing-mode: vertical-rl;
-}*/
+}
 
 #waifu-toggle.waifu-toggle-active {
 	margin-left: -50px;
@@ -20,7 +20,7 @@
 
 #waifu-toggle.waifu-toggle-active:hover {
 	margin-left: -30px;
-}
+}*/
 
 #waifu {
 	bottom: -1000px;

@@ -292,7 +292,7 @@ select name 姓名,math 数学成绩,english 英语成绩 from stu;
 &lt;li class=&#34;lvl-2&#34;&gt;
 &lt;p&gt;条件&lt;/p&gt;
 &lt;p&gt;条件列表可以使用以下运算符&lt;/p&gt;
-&lt;img src=&#34;/.com//09/27/MySQL%E5%AD%A6%E4%B9%A0/image-20220921174012126.png&#34; class title=&#34;image-20220921174012126&#34;&gt;
+&lt;img src=&#34;/2023/09/27/MySQL%E5%AD%A6%E4%B9%A0/image-20220921174012126.png&#34; class=&#34;&#34; title=&#34;image-20220921174012126&#34;&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;UPPER函数&#34;&gt;UPPER函数&lt;/h4&gt;
